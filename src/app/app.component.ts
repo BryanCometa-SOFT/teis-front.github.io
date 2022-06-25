@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'teis-frontend';
+  dataTable: string[] = ["id", "tensión", "presión", "velocidad", "estado bateria", "profundidad", "fecha creación"];
 }

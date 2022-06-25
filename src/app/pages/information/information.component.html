@@ -1,0 +1,25 @@
+<section class="container">
+  <div class="row pt-4">
+    <div class="col-12">
+      <h1 class="text-center">Datos de Teis</h1>
+      <table class="table border-1 shadow">
+        <thead>
+          <tr>
+            <th *ngFor="let item of headTable">{{ item }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataBodyTable">
+            <td>{{ item.id }}</td>
+            <td>{{ item.strain }}</td>
+            <td>{{ item.pressure }}</td>
+            <td>{{ item.velocity }}</td>
+            <td>{{ item.stateBatery }}</td>
+            <td>{{ item.depth }}</td>
+            <td>{{ item.created_at | date }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
