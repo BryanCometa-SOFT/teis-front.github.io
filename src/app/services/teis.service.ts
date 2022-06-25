@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TeisService {
-  private ulr = "http://127.0.0.1:8000/api";
+  private ulr = "https://stark-woodland-57650.herokuapp.com/api";
 
   constructor(private http:HttpClient) { }
 

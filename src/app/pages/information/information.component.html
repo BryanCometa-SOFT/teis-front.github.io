@@ -8,7 +8,7 @@
             <th *ngFor="let item of headTable">{{ item }}</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody *ngIf="dataBodyTable != null">
           <tr *ngFor="let item of dataBodyTable">
             <td>{{ item.id }}</td>
             <td>{{ item.strain }}</td>
@@ -20,6 +20,9 @@
           </tr>
         </tbody>
       </table>
+      <h3 *ngIf="dataBodyTable == null" class="text-center">
+        No hay datos disponibles
+      </h3>
     </div>
   </div>
 </section>
